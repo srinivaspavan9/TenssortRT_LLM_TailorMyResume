@@ -1,8 +1,20 @@
 # Resume Tailoring Chatbot: LLM with NVIDIA TensorRT Optimization
 
-## Introduction
+## Enhanced Resume Tailoring with Fine-tuned LLM
 
 Welcome to the GitHub repository for a cutting-edge chatbot that specializes in tailoring resumes to job descriptions. This chatbot is powered by a fine-tuned Large Language Model (LLM) capable of providing precise Applicant Tracking System (ATS) scores, guiding users in optimizing their resumes for various job applications. A highlight of this project is the enhanced performance through NVIDIA TensorRT optimization on RTX PCs.
+
+In the landscape of job-seeking tools, Large Language Models (LLMs) have become a beacon of hope for candidates looking to polish their resumes. However, the standard LLMs currently available often miss the mark, providing ATS (Applicant Tracking System) scores that are hit-or-miss, with a success rate not exceeding 50%. The uncertainty these models introduce into the resume tailoring process undermines their utility, leaving users without the concrete guidance they need.
+
+My project introduces a paradigm shift in this arena by presenting a fine-tuned LLM that not only elevates the accuracy of ATS scores but also ensures the generation of a score with every query — a success rate of 100%. This leap in performance stems from specialized fine-tuning processes that hone the model's focus on resume evaluation.
+
+### Project Highlights
+The LLM at the heart of this chatbot has undergone an extensive fine-tuning process, employing cutting-edge techniques such as 4-bit quantization and LoRA-based adaptations, which are perfectly complemented by NVIDIA's TensorRT optimizations on RTX PCs. This synergy between hardware acceleration and software expertise results in a model that can swiftly and accurately generate ATS scores, providing users with precise and actionable feedback on their resumes.
+
+Moreover, the project stands out by not only providing this high level of accuracy but also by significantly improving inference times. It showcases how the integration of TensorRT can expedite LLM operations, thus enhancing the user experience through increased responsiveness.
+
+### Conclusion
+In conclusion, this project represents a significant advancement in the application of LLMs to the job application process. It brings to the table a tool that guarantees ATS score generation with unmatched precision, backed by the robust performance enhancements afforded by NVIDIA's RTX PCs. This LLM chatbot is not just an incremental improvement but a pivotal innovation that could redefine how job seekers approach resume tailoring.
 
 ## Model Architecture and Fine-Tuning
 
@@ -12,18 +24,6 @@ This model is built upon `mistralai/Mistral-7B-Instruct-v0.2`, using `BitsAndByt
 
 `TrainingArguments` set the stage for training, specifying epochs, batch size, learning rate, and evaluation strategy. We used a custom dataset using that has accurate ats scores for resumes based on the given job descriptions. The training process follows these defined parameters, ensuring the model's adeptness at generating ATS scores.
 
-## Enhanced Resume Tailoring with Fine-tuned LLM
-In the landscape of job-seeking tools, Large Language Models (LLMs) have become a beacon of hope for candidates looking to polish their resumes. However, the standard LLMs currently available often miss the mark, providing ATS (Applicant Tracking System) scores that are hit-or-miss, with a success rate not exceeding 50%. The uncertainty these models introduce into the resume tailoring process undermines their utility, leaving users without the concrete guidance they need.
-
-My project introduces a paradigm shift in this arena by presenting a fine-tuned LLM that not only elevates the accuracy of ATS scores but also ensures the generation of a score with every query — a success rate of 100%. This leap in performance stems from specialized fine-tuning processes that hone the model's focus on resume evaluation.
-
-## Project Highlights
-The LLM at the heart of this chatbot has undergone an extensive fine-tuning process, employing cutting-edge techniques such as 4-bit quantization and LoRA-based adaptations, which are perfectly complemented by NVIDIA's TensorRT optimizations on RTX PCs. This synergy between hardware acceleration and software expertise results in a model that can swiftly and accurately generate ATS scores, providing users with precise and actionable feedback on their resumes.
-
-Moreover, the project stands out by not only providing this high level of accuracy but also by significantly improving inference times. It showcases how the integration of TensorRT can expedite LLM operations, thus enhancing the user experience through increased responsiveness.
-
-## Conclusion
-In conclusion, this project represents a significant advancement in the application of LLMs to the job application process. It brings to the table a tool that guarantees ATS score generation with unmatched precision, backed by the robust performance enhancements afforded by NVIDIA's RTX PCs. This LLM chatbot is not just an incremental improvement but a pivotal innovation that could redefine how job seekers approach resume tailoring.
 
 ## How to Use
 
