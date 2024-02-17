@@ -13,9 +13,6 @@ The LLM at the heart of this chatbot has undergone an extensive fine-tuning proc
 
 Moreover, the project stands out by not only providing this high level of accuracy but also by significantly improving inference times. It showcases how the integration of TensorRT can expedite LLM operations, thus enhancing the user experience through increased responsiveness.
 
-### Conclusion
-In conclusion, this project represents a significant advancement in the application of LLMs to the job application process. It brings to the table a tool that guarantees ATS score generation with unmatched precision, backed by the robust performance enhancements afforded by NVIDIA's RTX PCs. This LLM chatbot is not just an incremental improvement but a pivotal innovation that could redefine how job seekers approach resume tailoring.
-
 ## Model Architecture and Fine-Tuning
 
 This model is built upon `mistralai/Mistral-7B-Instruct-v0.2`, using `BitsAndBytesConfig` for efficient 4-bit quantization, optimized for NVIDIA's advanced hardware. The model undergoes further refinement with `AutoPeftModelForCausalLM` configured via `LoraConfig` to prepare for `kbit` training. The fine-tuning leverages the `SFTTrainer` class from the `trl` library, with a max sequence length of 2048 tokens.
@@ -109,4 +106,6 @@ Gpt4 Gives output says 0% while the finetuned model gave a percentage of 37%
 - ![gpt4 output](GPT4_inference.jpg)
 - ![FineTuned Model output](inference.png)
   
+### Conclusion
+In conclusion, this project represents a significant advancement in the application of LLMs to the job application process. It brings to the table a tool that guarantees ATS score generation with unmatched precision, backed by the robust performance enhancements afforded by NVIDIA's RTX PCs. This LLM chatbot is not just an incremental improvement but a pivotal innovation that could redefine how job seekers approach resume tailoring.
 
