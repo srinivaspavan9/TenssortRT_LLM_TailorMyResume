@@ -92,7 +92,7 @@ familiarity with bootstrap or other similar frameworks
 wordpress knowledge and desire to learn is a major bonus
 `
 ## Output
-
+Gpt4 Gives output says 0% while the finetuned model gave a percentage of 37%
 - ![gpt4 output](GPT4_inference.jpg)
 - ![FineTuned Model output](inference.png)
   
